@@ -1,0 +1,108 @@
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	background: url(../images/background.png) repeat;
+	font: normal 1em 'fira_sanslight';
+	color: #4a545d;
+}
+/*прибьем футер снизу*/
+.wrapper{
+	position:relative;
+	min-height:100%;
+	min-width: 970px /*обязательно указать минимальную ширину и сделать на 10рх больше контейнера*/
+	height:auto!important;
+	overflow: hidden;
+}
+.wrapper:after {
+	content: "";
+	height: 80px;
+	display: block;
+}
+.page-footer{
+	height: 80px;
+	margin-top: -80px;	
+}
+/*прибьем футер снизу - конец*/
+/*стили для шапки*/
+.container-big {
+	max-width: 1200px;
+	min-width: 960px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.page-header {
+	height: 119px;
+	background: #eff3f7 url('../images/line.png') bottom center no-repeat;
+	position: relative;
+	margin-bottom: 39px;
+}
+.page-header .image-logo-link {
+	position: absolute;
+	top: 39px;
+	left: 0;
+}
+.page-header .header-logo-text {
+	position: absolute;
+	text-indent: -9999px;
+	top: 36px;
+}
+.page-header .socials {
+	position: absolute;
+	right: 0;
+	top: 36px;
+}
+/*стили для шапки - конец*/
+/*блок соц. иконок*/
+.socials {
+	margin: 0;
+	padding: 0;
+	min-width: 260px;
+}
+.socials .socials-item {
+	list-style: none;
+	display: inline-block;
+	height: 47px;
+	width: 47px;
+	margin-left: 19px; /*отступ всегда слева*/
+}
+.socials .socials-item:first-child {
+	margin-left: 0;  /*у первого элемента отступ 0*/
+}
+.socials .social-link {
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-indent: -9999px;
+}
+.socials-item .vk {
+	display: block;
+	background: url('../images/01-vk.png') no-repeat;
+}
+.socials-item .vk:hover {
+	background: url('../images/02-vk-active.png') no-repeat;
+}
+.socials-item .tw {
+	display: block;
+	background: url('../images/03-tw.png') no-repeat;
+}
+.socials-item .tw:hover {
+	background: url('../images/04-tw-active.png') no-repeat;
+}
+.socials-item .fb {
+	display: block;
+	background: url('../images/05-facebook.png') no-repeat;
+}
+.socials-item .fb:hover {
+	background: url('../images/06-facebook-active.png') no-repeat;
+}
+.socials-item .gh {
+	display: block;
+	background: url('../images/07-git.png') no-repeat;
+}
+.socials-item .gh:hover {
+	background: url('../images/08-git-active.png') no-repeat;
+}
+/*блок соц. иконок - конец*/
