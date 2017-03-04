@@ -11,8 +11,8 @@ body {
 .wrapper{
 	position:relative;
 	min-height:100%;
-	min-width: 970px /*обязательно указать минимальную ширину и сделать на 10рх больше контейнера*/
-	height:auto!important;
+	min-width: 970px; /*обязательно указать минимальную ширину и сделать на 10рх больше контейнера*/
+	height: auto!important;
 	overflow: hidden;
 }
 .wrapper:after {
@@ -21,8 +21,9 @@ body {
 	display: block;
 }
 .page-footer{
+	background: url('../images/line.png') top center no-repeat;
 	height: 80px;
-	margin-top: -80px;	
+	margin-top: 20px;	
 }
 /*прибьем футер снизу - конец*/
 /*стили для шапки*/
@@ -106,3 +107,268 @@ body {
 	background: url('../images/08-git-active.png') no-repeat;
 }
 /*блок соц. иконок - конец*/
+/*стили для основной части*/
+.container {
+	width: 962px;
+	height: auto;
+	margin: 0 auto;
+	position: relative;
+}
+/*стили для основной части - конец*/
+/*стили для навигации*/
+.sidebar {
+	display: block;
+	float: left;
+}
+.navigation {
+	display: block;
+	width: 252px;
+	margin-bottom: 24px;
+	
+}
+.navigation .navigation-list {
+	display: block;
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+	background-color: #eff3f7;
+	border-radius: 4px;
+}
+.navigation-list .current {
+	font: 21px 'fira_sansbook';
+	background-color: #3ba8c0;
+	border-radius: 4px 4px 0 0;
+}
+.navigation-list .navigation-item {
+	font: 21px 'fira_sansbook';
+	color: #a9aeb9;
+	padding: 20px 30px 20px 27px;
+	border-bottom: 2px solid #3ba8c0;
+}
+.navigation-list .navigation-item:last-child {
+	border-bottom: none;
+}
+.navigation-list .navigation-link {
+	text-decoration: none;
+	color: #a9aeb9;
+}
+
+.current .navigation-link {
+	color: #fff;
+}
+/*стили для навигации - конец*/
+/*стили для контактов*/
+.sidebar .contacts {
+	display: block;
+	width: 252px;
+}
+.contacts .contacts-header {
+	background-color: #3ba8c0;
+	border-radius: 4px 4px 0 0;
+	display: block;
+	height: 40px;
+}
+.contacts-header .header-inner-text {
+	display: inherit;
+	font: 21px 'fira_sansbook';
+	color: #fbfcfd;
+	padding: 5px 10px 5px 11px;
+}
+.contacts .contact-list {
+	position: relative;
+	display: block;
+	width: 252px;
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+.contact-list .contact-item {
+	height: 40px;
+}
+.contact-list .contact-link {
+	text-decoration: none;
+	
+}
+.contact-list .contact-text {
+	display: block;
+	font: 15px 'fira_sansbook';
+	color: #fbfcfd;
+	padding: 9px 10px 9px 81px;
+}
+.contact-list .contact-text:hover {
+	text-decoration: underline;
+}
+.contact-list .contact-item-mail {
+	background: url('../images/email.png') 30px center no-repeat;
+	background-color: #41b9d4;
+}
+.contact-list .contact-item-phone {
+	background: url('../images/tel.png')  30px center no-repeat;
+	background-color: #48cbe8;
+}
+.contact-list .contact-item-skype {
+	background: url('../images/skype.png')  30px center no-repeat;
+	background-color: #51daf8;
+	border-radius: 0 0 4px 4px;
+}
+/*стили для контактов - конец*/
+/*изменяемый контент*/
+.variable-content {
+	position: relative;
+	display: block;
+	width: 650px;
+	height: auto;
+	float: left;
+	margin-left: 60px;
+}
+/*Основная информация*/
+.clearfix:before,
+.clearfix:after {
+ content: " ";  
+ display: table;
+}
+.clearfix:after {
+  clear: both;  
+}
+.aboutbox {
+	display: block;
+	background: #eff3f7;
+	margin-bottom: 26px;
+	border-radius: 4px;
+}
+.aboutbox .aboutbox-header {
+	display: inline-block;
+	margin: 0;
+	padding: 15px 30px;
+	border-bottom: 2px solid #3ba8c0;
+	font: 27px 'fira_sansbook';
+	color: #3ba8c0;
+}
+.aboutbox-body {
+	display: block;
+	position: relative;
+}
+.aboutbox-body .image-wrap {
+	display: block;
+	margin: 32px;
+	float: left;
+}
+.aboutbox-body .avatar-box {
+	width: 151px;
+	height: 151px;
+	border-radius: 50% 50%;
+	overflow: hidden;
+	border: 4px solid #29a2b9;
+}
+.aboutbox-body .avatar {
+	width: 100%;
+}
+.aboutbox-body .worksheet-wrap {
+	display: block;
+
+}
+.aboutbox-body .worksheet-list {
+	display: inline-block;
+	margin-top: 23px;
+	margin-bottom: 0;
+	padding: 0;
+	line-height: 2;
+}
+.aboutbox-body .worksheet-item {
+	list-style-type: none;
+	position: relative;
+}
+.worksheet-item .worksheet-what {
+	display: inline-block;
+	font: 17px 'fira_sansmedium';
+}
+.worksheet-item .worksheet-info {
+	display: inline-block;
+	font: 15px 'fira_sansbook';
+	margin-left: 19px;
+}
+
+.worksheet-item .skills {
+	display: block;
+	width: 193px;
+	height: 80px;
+	float: right;
+}
+.worksheet-item .skills-list {
+	
+	position: absolute;
+	padding-left: 0;
+	margin-top: 2px;
+	line-height: 2;
+}
+.worksheet-item .skill-item {
+	list-style-type: none;
+	display: inline;
+	font: 14px 'ProximaNovaCond_semibold';
+	color: #fff;
+	border-radius: 2px;
+  	background-image: -moz-linear-gradient( 90deg, rgb( 59, 168, 192 ) 0%, rgb( 59, 168, 192 ) 47.168%, rgb( 46, 140, 162 ) 48.462%, rgb( 46, 140, 162 ) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb( 59, 168, 192 ) 0%, rgb( 59, 168, 192 ) 47.168%, rgb( 46, 140, 162 ) 48.462%, rgb( 46, 140, 162 ) 100%);
+	padding: 3px 13px;
+	margin-left: 3px;
+}
+/*Основная информация - конец*/
+/*Опыт работы*/
+.aboutbox-body .aboutbox-list {
+	display: block;
+	padding-left: 0;
+}
+.aboutbox-body .aboutbox-item {
+	list-style-type: none;
+	display: inline-block;
+	margin-bottom: 24px;
+}
+.aboutbox-body .icon-work  {
+	background: url('../images/job.png') 50px center no-repeat ;
+}
+.where {
+	font: 17px 'fira_sansbook';
+	margin-left: 125px;
+}
+.period {
+	font: 15px 'fira_sanslight';
+	margin-left: 125px;
+}
+/*Опыт работы - конец*/
+/*Образование*/
+.aboutbox-body .icon-college {
+	background: url('../images/educating.png') 50px center no-repeat;
+}
+.aboutbox-body .icon-cours {
+	background: url('../images/kurs.png') 50px center no-repeat;
+}
+/*Образование - конец*/
+/*изменяемый контент - конец*/
+/*подвал*/
+.container .lock {
+	display: block;
+	width: 124px;
+	height: 36px;
+	float: left;
+	background: url('../images/login-key.png') no-repeat;
+	margin-top: 26px;
+}
+.lock .lock-inner {
+	display: block;
+	padding: 5px 30px;
+	text-decoration: none;
+	font: 17px 'fira_sansbook';
+	color: inherit;
+}
+.lock .lock-inner:hover {
+	text-decoration: underline;
+	color: #51daf8;
+}
+.container .copyright {
+	display: block;
+	float: left;
+	margin-top: 35px;
+	font: 13px 'fira_sanslight';
+	margin-left: 170px;
+}
+/*подвал - конец*/
