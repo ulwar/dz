@@ -1,0 +1,97 @@
+.aboutbox-body .image-wrap {
+	display: block;
+	padding: 35px 0 35px 53px;
+	float: left;
+}
+.aboutbox-body .avatar-box {
+	width: 151px;
+	height: 151px;
+	border-radius: 50% 50%;
+	overflow: hidden;
+	border: 4px solid #29a2b9;
+}
+.aboutbox-body .avatar {
+	width: 100%;
+}
+.aboutbox-body .worksheet-wrap {
+	display: block;
+	position: relative;
+}
+.aboutbox-body .worksheet-list {
+	display: inline-block;
+	width: 57%;
+	
+	float: left;
+}
+.aboutbox-body .worksheet-item {
+	list-style-type: none;
+	padding-bottom: 22px;
+	display: inline-block;
+}
+.worksheet-item .worksheet-what {
+	display: inline-block;
+	font: 17px 'fira_sansmedium';
+}
+.worksheet-item .worksheet-info {
+	display: inline-block;
+	font: 15px 'fira_sansbook';
+	margin-left: 19px;
+	text-align: center;
+}
+
+.worksheet-item .skills {
+	display: inline-block;
+	width: 193px;
+	float: right;
+
+}
+.worksheet-item .skills-list {
+	
+	text-align: left;
+	padding-left: 0;
+	
+	line-height: 2;
+}
+.worksheet-item .skill-item {
+	list-style-type: none;
+	display: inline;
+	font: 14px 'ProximaNovaCond_semibold';
+	color: #fff;
+	border-radius: 2px;
+  	background-image: -moz-linear-gradient( 90deg, rgb( 59, 168, 192 ) 0%, rgb( 59, 168, 192 ) 47.168%, rgb( 46, 140, 162 ) 48.462%, rgb( 46, 140, 162 ) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb( 59, 168, 192 ) 0%, rgb( 59, 168, 192 ) 47.168%, rgb( 46, 140, 162 ) 48.462%, rgb( 46, 140, 162 ) 100%);
+	padding: 3px 13px;
+	margin-left: 3px;
+}
+/*Основная информация - конец*/
+/*Опыт работы*/
+.aboutbox-body .aboutbox-list {
+	display: block;
+	padding-left: 0;
+}
+.aboutbox-body .aboutbox-item {
+	list-style-type: none;
+	display: inline-block;
+	margin-bottom: 24px;
+}
+.aboutbox-body .icon-work  {
+	background: url('../images/job.png') 50px center no-repeat ;
+}
+.where {
+	font: 17px 'fira_sansbook';
+	margin-left: 125px;
+}
+.period {
+	font: 15px 'fira_sanslight';
+	margin-left: 125px;
+}
+/*Опыт работы - конец*/
+/*Образование*/
+.aboutbox-body .icon-college {
+	background: url('../images/educating.png') 50px center no-repeat;
+}
+.aboutbox-body .icon-cours {
+	background: url('../images/kurs.png') 50px center no-repeat;
+}
+/*Образование - конец*/
+/*изменяемый контент - конец*/

@@ -1,0 +1,68 @@
+
+.aboutbox .aboutbox-header {
+	display: block;
+	
+	background: #48cbe8;
+	border-bottom: 18px solid #67dffa;
+	font: 24px 'fira_sansbook';
+	color: #fff;
+	padding: 52px 58px;
+	margin-bottom: 48px;
+}
+#contact-form {
+	position: relative;
+}
+.contact-name {
+	float: left;
+	margin-left: 112px;
+	margin-bottom: 18px;
+}
+.contact {
+	margin: 0;
+}
+.contact-email {
+	float: right;
+	margin-right: 124px;
+}
+#name, #email, #comment  {
+	width: 193px;
+	height: 42px;
+	border: 1px solid #48cbe8;
+	border-radius: 4px;
+}
+::-webkit-input-placeholder {
+	font: 13px 'fira_sanslight';
+	color: #5acee9;
+	padding-left: 9px;
+}
+::-moz-placeholder {
+	font: 13px 'fira_sanslight';
+	color: #5acee9;
+	padding-left: 9px;
+}							/* Firefox 19+ */
+:-moz-placeholder {
+	font: 13px 'fira_sanslight';
+	color: #5acee9;
+	padding-left: 9px;
+}							/* Firefox 18- */
+:-ms-input-placeholder {
+	font: 13px 'fira_sanslight';
+	color: #5acee9;
+	padding-left: 9px;
+}
+:focus::-webkit-input-placeholder {
+	color: transparent
+}
+:focus::-moz-placeholder {
+	color: transparent
+}
+:focus:-moz-placeholder {
+	color: transparent
+}
+:focus:-ms-input-placeholder {
+	color: transparent
+}
+.message_form {
+	margin-left: 112px;
+}
+

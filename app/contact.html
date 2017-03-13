@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Главная страница</title>
+        <title>Контакты</title>
         <meta name="description" content="loftschool_homework">
         <meta name="keywords" content="loftschool_homework">
         <meta name="author" content="Ihar Viazh">
@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="fonts/fira.css">
         <link rel="stylesheet" href="fonts/proximanovacond-semibold.css">
         <link rel="stylesheet" href="css/main.css" type="text/css">
-        <link rel="stylesheet" href="css/about_me_page.css">
+        <link rel="stylesheet" href="css/contact.css">
         <script src="bower/modernizer/modernizr.js"></script>
     </head>
     
@@ -49,13 +49,13 @@
                     <!--Navigation-->
                     <nav class="navigation">
                         <ul class="navigation-list">
-                            <li class="navigation-item current">
+                            <li class="navigation-item">
                                 <a class="navigation-link" href="index.html">Обо мне</a>
                             </li>
                             <li class="navigation-item">
                                 <a class="navigation-link" href="my_works.html">Мои работы</a>
                             </li>
-                            <li class="navigation-item">
+                            <li class="navigation-item current">
                                 <a class="navigation-link" href="contact.html">Связаться со мной</a>
                             </li>
                         </ul>
@@ -88,84 +88,27 @@
                 </aside>
                     <!--Изменяемый контент-->
             <div class="variable-content">
-                <!--Основная информация-->
-                <section class="aboutbox">
-                    <h2 class="aboutbox-header">Основная информация</h2>
-                    <div class="aboutbox-body clearfix">
-                        <div class="image-wrap">
-                            <div class="avatar-box">
-                                <img src="images/1_dvalyn_1970.jpeg" alt="Мое фото" class="avatar">
-                            </div>
+                <!--Обратная связь-->
+                <div class="aboutbox">
+                    <h2 class="aboutbox-header">У вас есть интересный проект? Напишите мне</h2>
+                    <form id="contact-form">
+                        <div class="contact-name clearfix">
+                            <p class="contact"><label for="name">Имя</label></p>
+                            <input id="name" name="name" placeholder="Как к Вам обращаться" required="" tabindex="1" type="text">
                         </div>
-                        <div class="worksheet-wrap clearfix">
-                            <ul class="worksheet-list">
-                                <li class="worksheet-item clearfix">
-                                    <div class="worksheet-what">Меня зовут:</div>
-                                    <div class="worksheet-info">Вяжевич Игорь Евгеньевич</div>
-                                </li>
-                                <li class="worksheet-item clearfix">
-                                    <div class="worksheet-what">Мой возраст:</div>
-                                    <div class="worksheet-info">46 лет</div>
-                                </li>
-                                <li class="worksheet-item clearfix">
-                                    <div class="worksheet-what">Мой город:</div>
-                                    <div class="worksheet-info">Молодечно, Беларусь</div>
-                                </li>
-                                <li class="worksheet-item clearfix">
-                                    <div class="worksheet-what">Моя специализация:</div>
-                                    <div class="worksheet-info">FRONTEND разработчик</div>
-                                </li>
-                                <li class="worksheet-item clearfix">
-                                    <div class="worksheet-what">Ключевые навыки:</div>
-                                    <div class="worksheet-info skills">
-                                        <ul class="skills-list">
-                                            <li class="skill-item">html</li>
-                                            <li class="skill-item">css</li>
-                                            <li class="skill-item">javascript</li>
-                                            <li class="skill-item">gulp</li>
-                                            <li class="skill-item">git</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
+                        <div class="contact-email clearfix">
+                            <p class="contact"><label for="email">Email</label></p>
+                            <input id="email" name="email" placeholder="Куда мне писать" required="" tabindex="2" type="text">
                         </div>
-                    </div>
-                </section>
-                <!--/Основная информация-->
-                <!--Опыт работы-->
-                <section class="aboutbox">
-                    <h2 class="aboutbox-header">Опыт работы</h2>
-                    <div class="aboutbox-body">
-                        <ul class="aboutbox-list">
-                            <li class="aboutbox-item icon-work">
-                                 <div class="where">"ИП Вяжевич - продажа и ремонт компьютеров"</div>
-                                <div class="period">Июнь 2002 - Ноябрь 2009</div>
-                            </li>
-                            <li class="aboutbox-item icon-work">
-                                <div class="where">"ПТЧУП Теплоэнергосвязь" - инженер по ремонту и обслуживанию компьютерной техники</div>
-                                <div class="period">Апрель 2010 - Декабрь 2012</div>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <!--/Опыт работы-->
-                <!--Образование-->
-                <section class="aboutbox">
-                    <h2 class="aboutbox-header">Образование</h2>
-                    <div class="aboutbox-body">
-                        <ul class="aboutbox-list">
-                            <li class="aboutbox-item icon-college">
-                                <div class="where">Среднее специальное. ММУ</div>
-                                <div class="period">Сентябрь 1985 - Июнь 1991</div>
-                            </li>
-                            <li class="aboutbox-item icon-cours">
-                                <div class="where">Курсы Loftschool.ru</div>
-                                <div class="period">Февраль 2017 - по настоящее время</div>
-                            </li>
-                        </ul>
-                    </div> 
-                </section>
-                <!--/Образование-->
+                        <div class="message_form clearfix">
+                            <p class="contact"><label for="comment">Сообщение</label></p> 
+                            <textarea id="comment" name="comment" tabindex="4">Кратко в чем суть</textarea>
+                            <input name="submit" id="submit" tabindex="5" value="Отправить" type="submit">
+                        </div>
+                    </form>
+                </div>
+                <!--/Обратная связь-->
+               
             </div>
                 <!--/Изменяемый контент-->
             </div>
