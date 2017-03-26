@@ -9,21 +9,28 @@
 	padding: 52px 58px;
 	margin-bottom: 48px;
 }
+.aboutbox .form-field-wrap {
+	display: block;
+	
+	padding: 0 122px 50px 124px;
+}
 #contact-form {
 	position: relative;
+
 }
-.contact-name {
-	float: left;
-	margin-left: 112px;
-	margin-bottom: 18px;
+.name-wrap {
+	display: inline-block;
+
+}
+.email-wrap {
+	display: inline-block;
+	margin-left: 9px;
 }
 .contact {
+	display: block;
 	margin: 0;
 }
-.contact-email {
-	float: right;
-	margin-right: 124px;
-}
+
 #name, #email, #comment  {
 	width: 193px;
 	height: 42px;
@@ -63,6 +70,47 @@
 	color: transparent
 }
 .message_form {
-	margin-left: 112px;
+	position: relative;
+	
 }
-
+#comment {
+	width: 398px;
+	max-width: 398px;
+	min-height: 183px;
+	display: block;
+	margin-bottom: 19px;
+}
+.message_form .g-recaptcha {
+	margin-bottom: 21px;
+}
+#submit {
+	float: left;
+	border: 2px #48cbe8;
+	border-radius: 5px;
+    background-color: #48cbe8;
+    font: 19px fira_sansbook;
+    color: #fff;
+    width: 125px;
+  	height: 31px;
+  	box-shadow: 0 2px #3ba8c0;
+}
+#reset {
+	width: 125px;
+  	height: 31px;
+	float: right;
+	border: 2px #849db5;
+	border-radius: 5px;
+    background-color: #849db5;
+    font: 19px fira_sansbook;
+    color: #fff;
+  	box-shadow: 0 2px #687b8f;
+}
+#submit:hover, #reset:hover {
+	box-shadow: none;
+}
+#submit:active {
+	box-shadow: 0 -2px 0 #3ba8c0;
+}
+#reset:active {
+	box-shadow: 0 -2px #687b8f;
+}

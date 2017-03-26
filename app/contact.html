@@ -91,21 +91,31 @@
                 <!--Обратная связь-->
                 <div class="aboutbox">
                     <h2 class="aboutbox-header">У вас есть интересный проект? Напишите мне</h2>
+                    <div class="form-field-wrap">
                     <form id="contact-form">
-                        <div class="contact-name clearfix">
-                            <p class="contact"><label for="name">Имя</label></p>
+                    
+                        <div class="name-wrap">
+                            <label for="name" class="contact">Имя</label>
                             <input id="name" name="name" placeholder="Как к Вам обращаться" required="" tabindex="1" type="text">
                         </div>
-                        <div class="contact-email clearfix">
-                            <p class="contact"><label for="email">Email</label></p>
+                       <div class="email-wrap">
+                            <label for="email" class="contact">Email</label>
                             <input id="email" name="email" placeholder="Куда мне писать" required="" tabindex="2" type="text">
                         </div>
                         <div class="message_form clearfix">
-                            <p class="contact"><label for="comment">Сообщение</label></p> 
-                            <textarea id="comment" name="comment" tabindex="4">Кратко в чем суть</textarea>
-                            <input name="submit" id="submit" tabindex="5" value="Отправить" type="submit">
+                            <label for="comment" class="contact">Сообщение</label>
+                            <textarea id="comment" name="comment" tabindex="4" placeholder="Кратко в чем суть"></textarea>
+                            <label for="name" class="contact">Подтвердите, что вы не робот</label>
+                            <div class="g-recaptcha" data-sitekey="6LcePAATAAAAAGPRWgx90814DTjgt5sXnNbV5WaW"></div>
+                       
+      
+                            <button name="submit" id="submit" class="clearfix" tabindex="5" value="Отправить"type="submit">Отправить</button>
+                            <button name="submit" id="reset" class="clearfix" tabindex="6" value="Очистить" type="reset">Очистить</button>
                         </div>
+                         <!--js-->
+                        <script src='https://www.google.com/recaptcha/api.js'></script>
                     </form>
+                    </div>
                 </div>
                 <!--/Обратная связь-->
                

@@ -1,22 +1,24 @@
 .aboutbox .aboutbox-body {
-	margin-top: 27px;
+	padding: 27px 20px 20px 20px;
+	margin: 0 auto;
 }
 .aboutbox .my_works-wrap {
+	position: relative;
 	display: inline-block;
 	text-align: center;
 	float: left;
-	margin: 0 19px 46px 11px;
+	margin-left: 29px;
 }
-.aboutbox-body .my_works-list {
-	display: block;
-
+.aboutbox .my_works-wrap:first-child {
+	margin-left: 0;
 }
-.aboutbox-body .my_works-list:first-child {
-	
+.aboutbox-body .row-works {
+	display: inline-block;
+	margin-bottom: 40px;
 }
 .my_works-wrap .my_works-box {
 	position: relative;
-	width: 170px;
+	width: 179px;
 	height: 125px;
 	border: 2px solid #29a2b9;
 	border-radius: 4px;
@@ -27,7 +29,20 @@
 .my_works-box .work {
 	width: 100%;
 }
-.work-name :hover {
+.my_works-box .work-hover {
+	position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    background: url(../images/fon-hover.png) repeat;
+	opacity: 0.8;
+    display:none;
+}
+.my_works-box:hover .work-hover {
+	display: block;
+}
+.my_works-box .work-name {
 	position: absolute;
 	top: 40%;
 	left: 36%;
@@ -36,29 +51,31 @@
 	padding: 2px 8px;
 	font: 12px 'fira_sansbook';
 	color: #eff3f7;
-
-}
-.my_works-list .work-name:hover {
-	display: block;
-	visibility: visible;
-
-}
-
-.my_works-box:hover {
 	
 }
 
-.my_works-wrap .my_works-info {
-	display: inline-block;
-	width: 185px;
-	font: 15px 'fira_sanslight';
-	margin: 0;
-	line-height: 1.2;
-}
-.my_works-list .link-works {
+.my_works-wrap .link-works {
 	font: 13px 'fira_sanslight_italic';
 	color: #5eb3c8;
 	text-decoration: none;
+	text-align: center;
+}
+.project-info-wrap {
+	display: inline-block;
+	vertical-align: top;
+}
+.project-info {
+	padding-left: 0;
+	list-style-type: none;
+	margin: 0;
+}
+.my_works-info {
+	width: 166px;
+	font: 15px 'fira_sanslight';
+}
+.my_works-wrap .my-works-info {
+	text-align: center;
+	
 }
 .aboutbox-body .new_project {
 	background-color: #edf8fc;
